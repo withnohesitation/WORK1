@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVER</title>
+    <meta name="description" content="네이버 클론 코딩 - 네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+    <meta name="Author" content="최혜은">
+    <meta name="apple-mobile-web-app-title" content="NAVER">
+    <meta property="og:title" content="네이버">
+    <meta property="og:url" content="https://www.naver.com/">
+    <meta property="og:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#main">본문바로가기</a>
+    </div>
+
+    <div id="wrapper">
+        <!--헤더-->
+        <header id="header">
+            <div class="group-search">
+                <div class="search-inner">
+                    <h1 class="logo">
+                        <a href="">
+                            <span class="blind">네이버</span>
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"></path></svg>
+                        </a>
+                    </h1>
+                    <form action="" method="get" class="search-form">
+                        <fieldset>
+                            <legend class="blind">검색창 </legend>
+                            <input type="search" name="" id="" class="input-search">
+                            <button class="btn-keyboard" aria-label="가상키보드"></button>
+                            <button class="btn-auto" aria-label="자동완성"></button>
+                            <button class="btn-submit" aria-label="전송">
+                                <!--svg-->
+                                <svg id="search-btn" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" class="ico_btn_search type_color" style="fill: #ff8aab"> <path d="M22.13.5c11.378 0 20.632 9.256 20.632 20.63 0 4.699-1.566 9.155-4.439 12.782l10.164 10.165a2.41 2.41 0 0 1-1.706 4.115 2.412 2.412 0 0 1-1.706-.705L33.31 35.719a2.41 2.41 0 0 1 0-3.41 15.71 15.71 0 0 0 4.628-11.178c0-8.718-7.09-15.808-15.807-15.808-8.718 0-15.808 7.09-15.808 15.808 0 7.15 4.817 13.43 11.714 15.273a2.41 2.41 0 0 1 1.705 2.954 2.41 2.41 0 0 1-2.95 1.705C7.788 38.658 1.5 30.46 1.5 21.131 1.5 9.756 10.756.5 22.13.5zm4.716 34.746a3.483 3.483 0 1 1 0 6.966 3.483 3.483 0 0 1 0-6.966z"></path> </svg>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+            <nav class="group-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="link">
+                            <i class="ic-mail"></i>
+                            <span class="">메일</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="link">
+                            <i class="ic-cafe"></i>
+                            <span class="">카페</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="link">
+                            <i class="ic-blog"></i>
+                            <span class="">블로그</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="link">
+                            <i class="ic-shopping"></i>
+                            <span class="">쇼핑</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="link">
+                            <i class="ic-news"></i>
+                            <span class="">뉴스</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="link">
+                            <i class="ic-stock"></i>
+                            <span class="">증권</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="link">
+                            <i class="ic-real"></i>
+                            <span class="">부동산</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="link">
+                            <i class="ic-map"></i>
+                            <span class="">지도</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="link">
+                            <i class="ic-webtoon"></i>
+                            <span class="">웹툰</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="link">
+                            <i class="img-chzzk">
+                                <img src="https://s.pstatic.net/static/www/mobile/edit/20240112_1095/upload_1705057885416AaxUM.png" width="44" height="44" class="chzzk" alt="치지직">
+                            </i>
+                            <span class="">치지직</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="link">
+                            <i class="ic-more"></i>
+                            <span class="blind">바로가기 펼침</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="util-area left">
+                <button class="btn-menu"><span class="blind">확장메뉴</span></button>
+                <a href="" class="btn-pay"><span class="blind">네이버페이</span></a>
+            </div> 
+
+            <div class="util-area right">
+                <button class="btn-talk"><span class="blind">네이버톡</span></button>
+                <button class="btn-alert"><span class="blind">알림혜택</span></button>
+            </div>      
+        </header>
+
+
+        <!--메인-->
+        <main id="main" class="container">
+            <div class="main-col-left">
+                <aside class="common-frame ad-banner">
+                    <a href="">
+                        <img src="./assets/images/ad1.jpg" alt="[광고]삼성화재 다이렉트 착-만기일 상관없이 자동차보험료 확인하면 스타벅스 아메리카노 2잔 즉시 지급!">
+                    </a>
+                </aside>
+
+                <section class="common-frame sc-news">
+                    <h2><span class="blind">뉴스</span></h2>
+                    <div class="group-header">
+                        <ul class="tab-list">
+                            <li class="tab-item">
+                                <a href="" role="tab" aria-selected="true">뉴스스탠드</a>
+                            </li>
+                            <li class="tab-item dot">
+                                <a href="" role="tab" aria-selected="false">언론사편집</a>
+                            </li>
+                            <li class="tab-item deco">
+                                <a href="" role="tab" aria-selected="false">엔터</a>
+                            </li>
+                            <li class="tab-item deco">
+                                <a href="" role="tab" aria-selected="false">스포츠</a>
+                            </li>
+                            <li class="tab-item deco">
+                                <a href="" role="tab" aria-selected="false">경제</a>
+                            </li>
+                        </ul>
+
+                        <div class="event-area">
+                            <a href="" class="link">
+                                <img src="./assets/images/event.png" alt="제 22대 국회의원선거" height="19">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="group-issue">
+                        <div class="issue-area">
+                            <button class="btn-all">전체언론사</button>
+                            <a href="" class="media">연합뉴스</a>
+                            <a href="" class="issue">뉴스내용</a>
+                        </div>
+
+                        <div class="news-area">
+                            <a href="">뉴스스탠드</a>
+                            <a href="">뉴스홈</a>
+                        </div>
+                    </div>
+
+                    <div class="group-media">
+                        <ul class="media-list">
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news1.png" height="20" alt="국민일보">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news2.png" height="20" alt="sbs">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news3.png" height="20" alt="머니투데이">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news4.png" height="20" alt="디지털타임스">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news5.png" height="20" alt="노컷뉴스">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news6.png" height="20" alt="NEWSIS">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news7.png" height="20" alt="한국경제TV">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news8.png" height="20" alt="한국일보">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news9.png" height="20" alt="YTN">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news10.png" height="20" alt="MK스포츠">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news11.png" height="20" alt="THE FACT">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news12.png" height="20" alt="법률신문">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news13.png" height="20" alt="그린포스트코리아">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news14.png" height="20" alt="약사공론">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news15.png" height="20" alt="농민신문">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news16.png" height="20" alt="스포츠서울">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news17.png" height="20" alt="전자신문">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news18.png" height="20" alt="경기일보">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news19.png" height="20" alt="인천일보">
+                                </a>
+                            </li>
+                            <li class="media-item">
+                                <a href="" class="link">
+                                    <img src="./assets/images/news20.png" height="20" alt="머니투데이">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <i class="vt-line vt1"></i><i class="vt-line vt2"></i><i class="vt-line vt3"></i><i class="vt-line vt4"></i><i class="vt-line vt5"></i>
+                        <i class="hr-line hr1"></i><i class="hr-line hr2"></i><i class="hr-line hr3"></i>
+                    </div>
+
+                    <div class="group-control">
+                        <div class="control-area">
+                            <button class="btn-prev"><span class="blind">이전슬라이드</span></button>
+
+                            <div class="more-text">
+                                <span class="text">언론사 더보기</span>
+                                <div class="fraction">
+                                    <span class="curr">1<span class="blind">페이지</span></span>
+                                    <span class="total"><span class="blind">전체</span>/4</span>
+                                </div>
+                            </div>
+
+                            <button class="btn-next"><span class="blind">다음슬라이드</span></button>
+                        </div>
+
+                        <div class="set-area">
+                            <button class="btn-list"><span class="blind">리스트형</span></button>
+                            <button class="btn-thumb"><span class="blind">썸네일형</span></button>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="common-frame sc-shopping">
+                    <h2><span class="blind">쇼핑</span></h2>
+                    <div class="group-header">
+                        <ul class="tab-list">
+                            <li class="tab-item">
+                                <a href="" class="link" role="tab" aria-selected="true">
+                                    쇼핑
+                                </a>
+                            </li>
+                            <li class="tab-item deco">
+                                <a href="" class="link" role="tab" aria-selected="false">
+                                    맨즈
+                                </a>
+                            </li>
+                            <li class="tab-item deco">
+                                <a href="" class="link" role="tab" aria-selected="false">
+                                    원쁠딜
+                                </a>
+                            </li>
+                            <li class="tab-item deco">
+                                <a href="" class="link" role="tab" aria-selected="false">
+                                    쇼핑라이브
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="pagination-area">
+                            <div class="fraction">
+                                <span class="curr">1<span class="blind">페이지</span></span>
+                                <span class="total"><span class="blind">전체</span>/6</span>
+                            </div>
+                            <button class="btn-prev">
+                                <i class="prev-icon"></i>
+                                <span class="blind">이전페이지</span>
+                            </button>
+                            <button class="btn-next">
+                                <i class="next-icon"></i>
+                                <span class="blind">다음페이지</span>
+                            </button>
+                        </div>
+                    </div>
+                     
+                    <div class="group-main">
+                        <div class="shopping-col-left">
+                            <div class="group-mall">
+                                <span class="blind">몰 바로가기</span>
+                                <div class="mall-name">
+                                    <a href="" class="link">쿠팡</a>
+                                    <i class="dot"></i>
+                                    <a href="" class="link">G마켓</a>
+                                    <i class="dot"></i>
+                                    <a href="" class="link">옥션</a>
+                                    <i class="dot"></i>
+                                    <a href="" class="link">11번가</a>
+                                </div>
+                                <div class="mall-name">
+                                    <a href="" class="link">SSG닷컴</a>
+                                    <i class="dot"></i>
+                                    <a href="" class="link">올리브영</a>
+                                    <i class="dot"></i>
+                                    <a href="" class="link">CJ온스타일</a>
+                                    <i class="dot"></i>
+                                    <a href="" class="link">위메프</a>
+                                </div>
+                                <div class="mall-name">
+                                    <a href="" class="link">GS SHOP</a>
+                                    <i class="dot"></i>
+                                    <a href="" class="link">하프클럽</a>
+                                    <i class="dot"></i>
+                                    <a href="" class="link">패션플러스</a>
+                                </div>
+                            </div>
+                            <div class="group-quick">
+                                <ul class="quick-list">
+                                    <li class="quick-item">
+                                        <a href="" class="link">
+                                            <div class="quick-thumb home"></div>
+                                            <span class="name">쇼핑홈</span>
+                                        </a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="" class="link">
+                                            <div class="quick-thumb review"></div>
+                                            <span class="name">리뷰적립</span>
+                                        </a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="" class="link">
+                                            <div class="quick-thumb order"></div>
+                                            <span class="name">주문</span>
+                                        </a>
+                                    </li>
+                                    <li class="quick-item">
+                                        <a href="" class="link">
+                                            <div class="quick-thumb cart"></div>
+                                            <span class="name">장바구니</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="group-banner">
+                                <a href="" class="link">
+                                    <div class="banner-bg">
+                                        <img src="./assets/images/ad3.jpg" alt="[광고] MISOPE-하나만 사도 무료배송! 미소페 신상 봄맞이 세일!">
+                                    </div>
+                                    <p class="banner-text">가입만 해도 76,000원 쿠폰팩이?</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shopping-col-right"> 
+                            <ul class="product-list">
+                                <li class="product-item">
+                                    <a href="" class="link-img">
+                                        <img src="./assets/images/product1.jpg" alt>
+                                    </a>
+                                    <a href="" class="link-text">
+                                        <p class="text">포인트로 딱이야</p>
+                                        <p class="text">인기 봄 데일리룩</p>
+                                    </a>
+                                </li>
+                                <li class="product-item">
+                                    <a href="" class="link-img">
+                                        <img src="./assets/images/product/product2.jpg" alt>
+                                    </a>
+                                    <a href="" class="link-text">
+                                        <p class="text">운동일상 어디든</p>
+                                        <p class="text">1+1 쿨링 팬츠!</p>
+                                    </a>
+                                </li>
+                                <li class="product-item">
+                                    <a href="" class="link-img">
+                                        <img src="./assets/images/product/product3.jpg" alt>
+                                    </a>
+                                    <a href="" class="link-text">
+                                        <p class="text">BEST 인기샌들~!</p>
+                                        <p class="text">썸머룩 코디제안</p>
+                                    </a>
+                                </li>
+                                <li class="product-item">
+                                    <a href="" class="link-img">
+                                        <img src="./assets/images/product/product4.jpg" alt>
+                                    </a>
+                                    <a href="" class="link-text">
+                                        <p class="text">더울때~딱이야</p>
+                                        <p class="text">썸머Max90%↓</p>
+                                    </a>
+                                </li>
+                                <li class="product-item">
+                                    <a href="" class="link-img">
+                                        <img src="./assets/images/product/product5.jpg" alt>
+                                    </a>
+                                    <a href="" class="link-text">
+                                        <p class="text">편안함의 차이~</p>
+                                        <p class="text">입자마자 놀라요</p>
+                                    </a>
+                                </li>
+                                <li class="product-item">
+                                    <a href="" class="link-img">
+                                        <img src="./assets/images/product/product6.jpg" alt>
+                                    </a>
+                                    <a href="" class="link-text">
+                                        <p class="text">아무거나 쓰지마</p>
+                                        <p class="text">여름 샤워기 딱</p>
+                                    </a>
+                                </li>
+                                <li class="product-item">
+                                    <a href="" class="link-img">
+                                        <img src="./assets/images/product/product7.jpg" alt>
+                                    </a>
+                                    <a href="" class="link-text">
+                                        <p class="text">여름맞이 1+1</p>
+                                        <p class="text">100%무상환불제</p>
+                                    </a>
+                                </li>
+                                <li class="product-item">
+                                    <a href="" class="link-img">
+                                        <img src="./assets/images/product/product8.jpg" alt>
+                                    </a>
+                                    <a href="" class="link-text">
+                                        <p class="text">쿨링팬츠로 시원하게</p>
+                                        <p class="text">오늘특가 10%↓</p>
+                                    </a>
+                                </li>
+                                <li class="product-item">
+                                    <a href="" class="link-img">
+                                        <img src="./assets/images/product/product9.jpg" alt>
+                                    </a>
+                                    <a href="" class="link-text">
+                                        <p class="text">역시!너무예뻤어</p>
+                                        <p class="text">집들이선물 득템</p>
+                                    </a>
+                                </li>
+                                <li class="product-item">
+                                    <a href="" class="link-img">
+                                        <img src="./assets/images/product/product10.jpg" alt>
+                                    </a>
+                                    <a href="" class="link-text">
+                                        <p class="text">키즈 셋업 BEST</p>
+                                        <p class="text">이번주40%OFF!</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="shopping-pick-wrap">
+                        <div class="shopping-pick">
+                            <span class="pick-title">오늘의 혜택</span>
+                            <a href="" class="pick-link">
+                                <div class="pick-thumb">
+                                    <img src="./assets/images/pick.png" alt="Gmarket" height="13">
+                                </div>
+                                <div class="pick-issue">
+                                    7일간의 쇼핑축제 랜더스데이~누구나 7% 중복 쿠폰 무제한 발급
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="group-control">
+                        <button class="btn-prev"><span class="blind">이전슬라이드</span></button>
+
+                        <div class="more-text">
+                            <span class="text">쇼핑아이템 더보기</span>
+                            <div class="fraction">
+                                <span class="curr">1<span class="blind">페이지</span></span>
+                                <span class="total"><span class="blind">전체</span>/13</span>
+                            </div>
+                        </div>
+
+                        <button class="btn-next"><span class="blind">다음슬라이드</span></button>
+                    </div>
+                </section>
+
+                <section class="common-frame sc-feed">
+                    <h2><span class="blind">피드</span></h2>
+                    <div class="group-header">
+                        <ul class="tab-list">
+                            <li class="tab-item">
+                                <a href="" role="tab">추천<i class="dot"></i>구독</a>
+                            </li>
+                            <li class="tab-item deco"><a href="" role="tab" aria-selected="false">자동차</a></li>
+                            <li class="tab-item deco"><a href="" role="tab" aria-selected="false">웹툰</a></li>
+                            <li class="tab-item deco"><a href="" role="tab" aria-selected="false">패션뷰티</a></li>
+                            <li class="tab-item deco"><a href="" role="tab" aria-selected="true">레시피</a></li>
+                            <li class="tab-item deco"><a href="" role="tab" aria-selected="false">리빙</a></li>
+                            <li class="tab-item deco"><a href="" role="tab" aria-selected="false">책방</a></li>
+                            <li class="tab-item deco"><a href="" role="tab" aria-selected="false">지식+</a></li>
+                            <li class="tab-item deco"><a href="" role="tab" aria-selected="false">건강</a></li>
+                            <li class="tab-item deco"><a href="" role="tab" aria-selected="false">게임</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="group-main">
+                        <div class="feed-area">
+                            <div class="feed-box feed-three-column">
+                                <ul class="highlight-feed-list">
+                                    <li class="highlight-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed1.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <span class="color-text">레시피 집중탐구</span>
+                                                <strong class="text-title">오이소박이</strong>
+                                                <p class="text-content">
+                                                    깔끔하고 아삭한 매력
+                                                    <br>
+                                                    오이 10개로 만들어 먹어요
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="highlight-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed2.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <span class="color-text">푸드스토리</span>
+                                                <strong class="text-title">시원한 맛 폭발! 여름 밥상 얼갈이 열무김치</strong>
+                                                <p class="text-content">
+                                                    열을 내려주는 열무 & 얼갈이
+                                                    <br>
+                                                    어울리는 양념까지 제대로
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="highlight-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed3.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <span class="color-text">오늘의 푸드TV</span>
+                                                <strong class="text-title">고구마 롤 맛탕</strong>
+                                                <p class="text-content">
+                                                    세지 않은 불로 노릇하게 튀겨
+                                                    <br>
+                                                    설탕시럽에 빠르게 버무리면 끝!
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="feed-box feed-two-column">
+                                <ul class="common-feed-list">
+                                    <li class="common-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed2.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">
+                                                    맑은국종류 계란국 끓이는법 가벼운 아침메뉴 후루룩 먹기좋은 아침국 파계란국 레시피
+                                                </strong>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed3.jpg" alt></span>
+                                                    <span class="source-name">순둥작가</span>
+                                                </span>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    <li class="common-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed4.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">
+                                                    백종원 간장 계란볶음밥 레시피 간단한 스팸계란볶음밥 만드는법
+                                                </strong>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed3.jpg" alt></span>
+                                                    <span class="source-name">순둥작가</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="common-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed5.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">
+                                                    제철 매생이로 끓이는 영양 만점 떡국 레시피 매생이 떡국 만드는 법
+                                                </strong>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed3.jpg" alt></span>
+                                                    <span class="source-name">순둥작가</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="common-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed6.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">
+                                                    어남선생 류수영의 원팬 알리오올리오 파스타 레시피 알리오 올리오 맛있게 하는 법
+                                                </strong>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed3.jpg" alt></span>
+                                                    <span class="source-name">순둥작가</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="common-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed7.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">
+                                                    집에서도 쉽게 만드는 수제 무 오이 피클 오이피클 담그는 법 수제 피클 레시피
+                                                </strong>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed3.jpg" alt></span>
+                                                    <span class="source-name">순둥작가</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="common-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed8.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">
+                                                    집 반찬 레시피 100선 진미채 볶음 오징어채 볶음 맛있게 하는 법 레시피 공유
+                                                </strong>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed3.jpg" alt></span>
+                                                    <span class="source-name">순둥작가</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="common-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed9.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">
+                                                    냉털 볶음밥 레시피 중화식 새우 볶음밥 레시피 이연복 새우 볶음밥 만드는 법
+                                                </strong>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed3.jpg" alt></span>
+                                                    <span class="source-name">순둥작가</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="common-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed14.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">
+                                                    직접 만드는 부대찌개 밀키트 소분하는 법 부대찌개 양념장 레시피
+                                                </strong>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed3.jpg" alt></span>
+                                                    <span class="source-name">순둥작가</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="feed-box feed-four-column">
+                                <div class="thema-feed-title">
+                                    <strong>테마별 레시피</strong>
+                                </div>
+                                <ul class="thema-feed-list">
+                                    <li class="thema-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed4.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">#다이어트두부요리</strong>
+                                                <p class="feed-content">토마토 두부샐러드 만드는 법 다이어트 두부요리 레시피 두부샐러드소스</p>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed5.jpg" alt></span>
+                                                    <span class="source-name">봉스</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="thema-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed11.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">#채소반찬</strong>
+                                                <p class="feed-content">양상추 볶음 맛있는 채소반찬 나물반찬 양상추요리</p>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed5.jpg" alt></span>
+                                                    <span class="source-name">봉스</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="thema-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed12.jpg" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">#직장인도시락</strong>
+                                                <p class="feed-content">참치 포케 만드는 법 간단한 직장인 도시락 레시피</p>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed5.jpg" alt></span>
+                                                    <span class="source-name">봉스</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="thema-feed-item">
+                                        <a href="" class="link">
+                                            <div class="feed-img"><img src="./assets/images/feed/feed13.gif" alt></div>
+                                            <div class="feed-text">
+                                                <strong class="feed-title">#일주일반찬</strong>
+                                                <p class="feed-content">일주일 밑반찬 만들기 맛있는 밑반찬 종류 추천 부모님 반찬 레시피</p>
+                                                <span class="feed-source">
+                                                    <span class="source-thumb"><img src="./assets/images/feed5.jpg" alt></span>
+                                                    <span class="source-name">봉스</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button class="btn-next">
+                                    <span class="blind">다음페이지</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="feed-more">
+                            <button class="btn-more">
+                                <span class="text">펼쳐보기</span>
+                                <i class="plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="main-col-right">
+                <section class="common-frame sc-login">
+                    <h2 class="blind">로그인</h2>
+                    <p class="login-msg">네이버를 더 안전하고 편리하게 이용하세요</p>
+                    <a href="" class="link-login"><span class="blind">NAVER</span>로그인</a>
+                    <div class="more-area">
+                        <a href="">아이디 찾기</a>
+                        <a href="">비밀번호 찾기</a>
+                        <a href="">회원가입</a>
+                    </div>
+                </section>
+
+                <aside class="common-frame ad-banner">
+                    <a href="">
+                        <img src="./assets/images/ad2.jpg" alt="[광고]네이버앱 클립 탭 보다가 예약하고 쇼핑까지">
+                    </a>
+                </aside>
+
+
+                <section class="common-frame sc-weather">
+                    <div class="group-header">
+                        <div class="header-weather">
+                            <a href="" class="header-title">날씨</a>
+                            <a href="" class="header-detail">예보 비교</a>
+                        </div>
+                        <span class="header-region">춘천시 동내면</span>
+                    </div>
+
+                    <div class="group-main">
+                        <div class="main-info">
+                            <a href="" class="weather-link">
+                                <div class="weather-now">
+                                    <i class="icon"></i>
+                                    <div class="desc">
+                                        <p class="weather-temperature">12.4°</p>
+                                        <p class="weather-text">맑음</p>
+                                </div>
+                                </div>
+                                <div class="weather-high-low">
+                                    <span class="weather-low">
+                                        <span class="blind">최저기온</span>
+                                        7°
+                                    </span>
+                                    <span class="weather-high">
+                                        <span class="blind">최고기온</span>
+                                        19°
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="" class="today-dust">
+                                <span class="dust">미세<span class="dust-status">보통</span></span>
+                                <span class="dust">초미세<span class="dust-status">보통</span></span>
+                            </a>
+                        </div>
+                        <div class="main-graph">
+                            <a href="" class="graph-link">
+                                <div class="weather-graph">
+                                </div>
+                                <ul class="weather-list">
+                                    <li class="weather-item">
+                                        <div class="clesius">10°</div>
+                                        <i class="icon"><!--이미지-->
+                                            <span class="blind">맑음</span>
+                                        </i>
+                                        <div class="hour">0</div>
+                                    </li>
+                                    <li class="weather-item">
+                                        <div class="clesius">10°</div>
+                                        <i class="icon"><!--이미지-->
+                                            <span class="blind">맑음</span>
+                                        </i>
+                                        <div class="hour">2</div>
+                                    </li>
+                                    <li class="weather-item">
+                                        <div class="clesius">10°</div>
+                                        <i class="icon"><!--이미지-->
+                                            <span class="blind">맑음</span>
+                                        </i>
+                                        <div class="hour">4</div>
+                                    </li>
+                                    <li class="weather-item">
+                                        <div class="clesius">10°</div>
+                                        <i class="icon"><!--이미지-->
+                                            <span class="blind">맑음</span>
+                                        </i>
+                                        <div class="hour">6</div>
+                                    </li>
+                                    <li class="weather-item">
+                                        <div class="clesius">10°</div>
+                                        <i class="icon"><!--이미지-->
+                                            <span class="blind">맑음</span>
+                                        </i>
+                                        <div class="hour">8</div>
+                                    </li>
+                                    
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="common-frame sc-stock">
+                    <div class="group-header">
+                        <div class="header-stock">
+                            <a href="" class="header-title">증시</a>
+                            <button class="header-detail">
+                                <span class="blind">정보 더보기</span>
+                            </button>
+                        </div>
+                        <div class="header-aside">
+                            04.03 01:19
+                            <button class="btn-refresh">
+                                <span class="blind">새로고침</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="group-main">
+                        <div class="main-popular">
+                            <a href="" class="popular-link">
+                                <p class="popular-name">다우존스</p>
+                                <span class="popular-price">39,068.22</span>
+                                <span class="popular-status">
+                                    <span class="status-change">498.80</span>
+                                    <span class="status-percent">+1.26%</span>
+                                </span>
+                                <img src="./assets/images/stock.png" alt="" width="180" height="72">
+                            </a>
+                        </div>
+                        <div class="main-stock">
+                            <ul class="stock-list">
+                                <li class="stock-item">
+                                    <a href="" class="link">
+                                        <span class="stock-name">삼성전자</span>
+                                        <i class="stock-status">85,000</i>
+                                    </a>
+                                </li>
+                                <li class="stock-item">
+                                    <a href="" class="link">
+                                        <span class="stock-name">한화에어로스페이스</span>
+                                        <i class="stock-status">241,000</i>
+                                    </a>
+                                </li>
+                                <li class="stock-item">
+                                    <a href="" class="link">
+                                        <span class="stock-name">에코프로</span>
+                                        <i class="stock-status">615,000</i>
+                                    </a>
+                                </li>
+                                <li class="stock-item more">
+                                    <a href="" class="link">
+                                        인기종목 더보기
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <aside class="common-frame ad-banner">
+                    <a href="" class="ad-naver">
+                        <img src="./assets/images/ad4.png" alt="[광고] 매일 포인트가 와르르! 포인트 보장" width="420" height="80">
+                    </a>
+                </aside>
+
+
+
+                <section class="common-frame sc-widget">
+                    <div class="widget-area">
+                        <h2 class="widget-title">위젯 보드</h2>
+                        <div class="widget-pannel">
+                            <div class="common-frame widget-calendar">
+                                <a href="" class="link">
+                                    <span class="title">캘린더</span>
+                                    <div class="date">4.3
+                                        <span class="day">수</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="common-frame widget-memo">
+                                <a href="" class="link">
+                                    <div class="memo-top">
+                                        <span class="title">메모</span>
+                                    </div>
+                                    <div class="memo-info">
+                                        <ul class="info-list">
+                                            <li class="info-item"></li>
+                                            <li class="info-item"></li>
+                                            <li class="info-item"></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="common-frame widget-papago">
+                                <a href="" class="link">
+                                    <i class="papago-logo"><span class="blind">파파고</span></i>
+                                    <i class="papago-icon"></i>
+                                    <span class="papago-use">번역하기</span>
+                                </a>
+                            </div>
+                            
+                            <div class="common-frame widget-dic">
+                                <div class="dic-area">
+                                    <a href="" class="title">영어사전</a>
+                                    <a href="" class="today">
+                                        I got told off for using my moblie phone.
+                                    </a>
+                                </div>
+                                <a href="" class="dic-search">
+                                    <span class="blind">검색하기</span>
+                                </a>
+
+                            </div>
+                            <div class="common-frame widget-vibe">
+                                <div class="vibe-top">
+                                    <div class="vibe-left">
+                                        <i class="logo"><span class="blind">VIBE</span></i>
+                                        <span class="title">따뜻한 봄사운드</span>
+                                    </div>
+                                    <button class="btn-refresh">다른 추천 보기</button>
+                                </div>
+                                <div class="vibe-info">
+                                    <ul class="vibe-list">
+                                        <li class="vibe-item">
+                                            <a href="" class="link">
+                                                <span class="vibe-thumb common-frame">
+                                                    <img src="./assets/images/vibe.png" alt width="108" height="162">
+                                                    <i class="vibe-play"><span class="blind">재생</span></i>
+                                                </span>
+                                                <p class="vibe-text">한큐선을 타면 어디든 갈 수 있어</p>
+                                            </a>
+                                        </li>
+                                        <li class="vibe-item">
+                                            <a href="" class="link">
+                                                <span class="vibe-thumb common-frame">
+                                                    <img src="./assets/images/vibe.png" alt width="108" height="162">
+                                                    <i class="vibe-play"><span class="blind">재생</span></i>
+                                                </span>
+                                                <p class="vibe-text">한큐선을 타면 어디든 갈 수 있어 Pt.002</p>
+                                            </a>
+                                        </li>
+                                        <li class="vibe-item">
+                                            <a href="" class="link">
+                                                <span class="vibe-thumb common-frame">
+                                                    <img src="./assets/images/vibe.png" alt width="108" height="162">
+                                                    <i class="vibe-play"><span class="blind">재생</span></i>
+                                                </span>
+                                                <p class="vibe-text">한큐선을 타면 어디든 갈 수 있어 Pt.003</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <aside class="common-frame ad-slide">
+                    <div class="slide-area">
+                        <a href="" class="link">
+                            <img src="./assets/images/slide_logo2.png" alt="" width="42">
+                            <div class="whale-text">
+                                <span class="title">나만의 스마트한 브라우저, 웨일</span>
+                                <p class="content">인터넷을 여는 가장 스마트한 방법</p>
+                            </div>
+                        </a>
+                        <div class="slide-indicator">
+                            <span class="dot" aria-selected="true"></span>
+                            <span class="dot" aria-selected="false"></span>
+                        </div>
+                    </div>
+                    
+                </aside>
+
+            </div>
+        </main>
+
+        <!--푸터-->
+        <footer id="footer">
+            <h2 class="blind">네이버 푸터</h2>
+            <div class="footer-inner">
+                <div class="nbanner-area">
+                    <ul class="public-list">
+                        <li class="public-item">
+                            <a href="" class="link">
+                                <i class="public-thumb">
+                                    <img src="./assets/images/nbanner1.png" alt width="160" height="100">
+                                </i>
+                                <div class="public-content">
+                                    <strong class="subtitle">네이버 커넥트재단</strong>
+                                    <strong class="title">부스트클래스 모집 중</strong>
+                                    <p class="text">어떤 유행에도 끄떡없는,</p>
+                                    <p class="text">인공지능 기초 다지기</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="public-item">
+                            <a href="" class="link">
+                                <i class="public-thumb">
+                                    <img src="./assets/images/nbanner1.png" alt width="160" height="100">
+                                </i>
+                                <div class="public-content">
+                                    <strong class="subtitle">경찰청</strong>
+                                    <strong class="title">사이버 범죄 예방의 날</strong>
+                                    <p class="text">당하지 말자, 사이버사기!</p>
+                                    <p class="text">손대지 말자, 사이버도박!</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="public-item">
+                            <a href="" class="link">
+                                <i class="public-thumb">
+                                    <img src="./assets/images/nbanner1.png" alt width="160" height="100">
+                                </i>
+                                <div class="public-content">
+                                    <strong class="subtitle">GenAI Korea</strong>
+                                    <strong class="title">생성형 AI 레드팀</strong>
+                                    <p class="text">네이버와 AI 윤리를 만들어갈</p>
+                                    <p class="text">참가자 모집 4.11~4.12</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="notice-area">
+                    <h3 class="notice-title">공지사항</h3>
+                    <a href="" class="link-all">서비스 전체보기</a>
+                </div>
+                
+                <div class="aside-area">
+                    <div class="partner-box-wrap">
+                        <div class="partner-box">
+                            <h3 class="title">Partners</h3>
+                            <ul class="partner-list">
+                                <li class="partner-item"><a href="" class="link">프로젝트 꽃</a></li>
+                                <li class="partner-item deco"><a href="" class="link">네이버 비즈니스</a></li>
+                                <li class="partner-item deco"><a href="" class="link">네이버 비즈니스 스쿨</a></li>
+                                <li class="partner-item deco"><a href="" class="link">네이버 광고</a></li>
+                                <li class="partner-item deco"><a href="" class="link">스토어 개설</a></li>
+                                <li class="partner-item deco"><a href="" class="link">지역업체 등록</a></li>
+                                <li class="partner-item deco"><a href="" class="link">엑스퍼트 등록</a></li>
+                            </ul>
+                        </div>
+                        <div class="partner-box">
+                            <h3 class="title">Developers</h3>
+                            <ul class="partner-list">
+                                <li class="partner-item"><div class="link">네이버 개발자 센터</div></li>
+                                <li class="partner-item deco"><div class="link">오픈 API</div></li>
+                                <li class="partner-item deco"><div class="link">오픈소스</div></li>
+                                <li class="partner-item deco"><div class="link">네이버 D2</div></li>
+                                <li class="partner-item deco"><div class="link">네이버 D2SF</div></li>
+                                <li class="partner-item deco"><div class="link">네이버 랩스</div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-box-wrap">
+                        <div class="service-box">
+                            <div class="service-info">
+                                <strong class="title">웨일 브라우저</strong>
+                                <a href="" class="link-info">이용안내</a>
+                            </div>
+                            <a href="" class="link-whale">
+                                <img src="./assets/images/service1.png" alt="네이버웨일" width="48" height="48">
+                            </a>
+                        </div>
+                        <div class="service-box">
+                            <div class="service-info">
+                                <strong class="title">기업 사이트</strong>
+                                <a href="" class="link-info">바로가기</a>
+                            </div>
+                            <a href="" class="link-corp">
+                                <img src="./assets/images/service2.png" alt="기업사이트" width="48" height="48">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="corp-area">
+                    <h3 class="blind">네이버 정책 및 약관</h3>
+                    <ul class="corp-list">
+                        <li class="corp-item"><a href="" class="link">회사소개</a></li>
+                        <li class="corp-item deco"><a href="" class="link">인재채용</a></li>
+                        <li class="corp-item deco"><a href="" class="link">제휴제안</a></li>
+                        <li class="corp-item deco"><a href="" class="link">이용약관</a></li>
+                        <li class="corp-item deco"><a href="" class="link"><strong>개인정보처리방침</strong></a></li>
+                        <li class="corp-item deco"><a href="" class="link">청소년보호정책</a></li>
+                        <li class="corp-item deco"><a href="" class="link">네이버 정책</a></li>
+                        <li class="corp-item deco"><a href="" class="link">고객센터</a></li>
+                    </ul>
+                    <address class="addr">
+                        <a href="">ⓒ NAVER Corp</a>
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

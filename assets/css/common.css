@@ -1,0 +1,87 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+#skipNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#skipNav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 40px;
+    white-space: nowrap;
+    background: #000;
+    color: #fff;
+    padding: 0 20px;
+    transform: translateY(-100%);
+
+}
+#skipNav a:focus,
+#skipNav a:active{
+    transform: translateY(0);
+}
+
+
+
+.sc-widget .widget-area .btn-refresh::after,
+.sc-widget .widget-area .vibe-left .logo::before,
+#footer .notice-area .link-all::after,
+.sc-widget .widget-area .widget-papago .papago-logo::before,
+.sc-stock .main-stock .stock-item.more .link::after,
+.sc-stock .main-stock .stock-item .link .stock-status::before,
+.sc-stock .main-popular .status-change::before,
+.sc-stock .header-aside .btn-refresh::before,
+.sc-stock .header-stock .header-detail::before,
+.sc-weather .header-weather .header-detail::before,
+.sc-login .link-login::before,
+.sc-feed .btn-next::before,
+.sc-news .group-control .set-area .btn-list::before,
+.sc-news .group-control .set-area .btn-thumb::before,
+.sc-news .control-area .btn-next::before,
+.sc-news .control-area .btn-prev::before,
+.sc-news .group-issue .issue-area .btn-all::after,
+#header .util-area .btn-menu::after,
+#header .util-area .btn-pay::after,
+#header .util-area .btn-talk::after,
+#header .util-area .btn-alert::after,
+#header .nav-list .nav-item .img-chzzk::before,
+header .nav-list .nav-item [class*="ic-"]::after,
+#header .nav-list .nav-item .link [class*="ic-"]::before,
+#header .group-search .btn-keyboard::before,
+#header .group-search .btn-auto::before {
+    background-image: url(../images/bg.png);
+    background-size: 444px;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.sc-shopping .group-control .btn-next::after,
+.sc-shopping .group-control .btn-prev::after,
+.sc-shopping .shopping-col-left .quick-item .quick-thumb.review::before,
+.sc-shopping .shopping-col-left .quick-item .quick-thumb.order::before,
+.sc-shopping .shopping-col-left .quick-item .quick-thumb.cart::before,
+.sc-shopping .shopping-col-left .quick-item .quick-thumb.home::before {
+    background-image: url(../images/bg2.png);
+    background-size: 158.5px;
+    background-repeat: no-repeat;
+}
+
+
+
+.sc-weather .graph-link .weather-item .icon::before,
+.sc-weather .weather-link .weather-now .icon::before {
+    background-image: url(../images/bg3.png);
+    background-size: 641px;
+    background-repeat: no-repeat;
+}
